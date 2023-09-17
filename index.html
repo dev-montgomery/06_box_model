@@ -3,9 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Box Model | Margin and Padding</title>
+  <style>
+    body {
+      margin: auto;
+      padding: 1em;
+      max-width: 600px;
+    }
+
+    h1 {
+      padding-left: .2em;
+      border-left: .4em solid black;
+      border-right: .4em solid black;
+    }
+
+    main {
+      border: 10px solid #202020;
+      background-color: #e7e7e7;
+    }
+
+    #margin {
+      padding: 0px 20px;
+    }
+
+    #border {
+      margin: 1em;
+      border: 5px solid #333;
+      padding: 2px 20px;
+      background-color: #a0a0a0;
+    }
+
+    #padding {
+      margin: 1em;
+      /* border:3px solid #a0a0a0; */
+      padding: .2em 1em;
+      background-color: #474747;
+      color: #fff;
+    }
+
+    #content {
+      margin: 1em;
+      padding: 1em;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>Box Model</h1>
+  <main>
+    <p id="margin">margin area</p>
+    <div id="border">
+      <p>border</p>
+      <div id="padding">
+        <p>padding of content</p>
+        <p id="content">This is the content. YEah, this is where the content goes.</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
